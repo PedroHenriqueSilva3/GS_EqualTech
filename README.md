@@ -15,16 +15,55 @@ O EqualTech combina **sensores, Edge Computing e Inteligência Artificial** para
 - Mais **sustentável**  
 - Mais **inclusivo**  
 
-O dispositivo IoT desenvolvido monitora:
+## 🧩 Principais Funcionalidades do Sistema
 
-- **Postura corporal** (MPU6050 – acelerômetro/giroscópio)  
-- **Níveis de estresse** (variações de movimento e tremor do corpo)  
-- **Temperatura e umidade do ambiente** (DHT22)  
-- **Comportamentos de ansiedade/agitação** (sensor ultrassônico HC-SR04)  
-- **Tempo efetivo de trabalho e tempo de pausa**  
-- Recomenda **pausas inteligentes** com base em métricas ergonômicas e comportamentais  
+---
 
-Os dados são enviados via **MQTT**, processados em dashboards e integrados ao ecossistema EqualTech.
+### 🔵 1. Monitoramento de Postura (MPU6050)
+- Detecta inclinação do corpo.  
+- Classificação automática: **Boa**, **Advertência**, **Ruim**.  
+- Acionamento de alerta visual/auditivo em caso crítico.  
+
+---
+
+### 🔴 2. Detecção de Estresse Físico (Giroscópio)
+- Avalia movimentação corporal.  
+- Classifica como **Baixo**, **Moderado**, **Alto**.  
+- Envia alertas imediatos via MQTT.  
+
+---
+
+### 🟡 3. Controle Inteligente de Jornada
+- Registra tempo de trabalho e de pausa.  
+- Sugere pausas automáticas após **50 minutos** de trabalho contínuo.  
+- Impede retomada antes do **tempo mínimo de descanso**.  
+
+---
+
+### 🟣 4. Análise de Ansiedade/Inquietação
+- O sensor ultrassônico detecta aproximação brusca.  
+- Gera alerta de possível **agitação ou estresse emocional**.  
+
+---
+
+### 🟢 5. Feedback em Tempo Real
+- LED RGB informa estado (trabalho, alerta, pausa).  
+- Buzzer emite alertas sonoros para **riscos detectados**.  
+
+---
+
+### 🟠 6. Envio de Dados via MQTT
+Dados enviados automaticamente a cada **10 segundos**:
+
+- `esp32/temperatura`  
+- `esp32/umidade1`  
+- `esp32/postura`  
+- `esp32/estresse`  
+- `esp32/distancia`  
+- `esp32/tempo`  
+- `esp32/alertas` *(mensagens urgentes)*  
+
+
 
 ---
 
