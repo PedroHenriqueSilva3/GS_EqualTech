@@ -114,4 +114,7 @@ test.mosquitto.org:1883
 ### **1. Acesse o projeto no Wokwi**
 **Link:** *https://wokwi.com/projects/447918959118197761*
 
+### **2. Acesse o video explicativo**
+**Link:** *https://youtu.be/53CuLuVW9N8?si=gcSL4JAkDjloyvlw*
+
 
