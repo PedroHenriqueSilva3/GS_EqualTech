@@ -4,6 +4,12 @@ Este repositório contém o projeto **EqualTech IoT**, parte da solução tecnol
 
 Este módulo é focado no **sistema IoT embarcado**, responsável por coletar dados em tempo real e enviá-los via MQTT para análise.
 
+*Alunos:*
+João Marcelo Diniz Vespa RM564038
+Pedro Henrique da Silva RM566235
+William Queiroz de Araujo RM565032
+
+
 ---
 
 ## 🧩 Visão Geral da Solução
